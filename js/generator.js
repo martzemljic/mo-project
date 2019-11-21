@@ -32,7 +32,7 @@ function checkTime(i) {
 }
 
 function genQuote() {
-  var randNum = Math.floor(Math.random() * 8) + 1;
+  var randNum = Math.floor(Math.random() * 17) + 1;
   document.getElementById('quote').innerHTML = quotes[randNum];
   var tweetQuote = quotes[randNum].split(' ').join('%20');
   tweetQuote = tweetQuote.split('<br>').join('');
@@ -41,7 +41,7 @@ function genQuote() {
 }
 
 //quote array
-var quotes = ["Blank", "\"Where there is a perfect pancake flip, there is life.\"<br>-  Mahoatmeal Ghandi", "\"I love pizza; you can't really go wrong with pizza.\"<br> - Nick Jonas", "\"I grew up eating street tacos and burritos on the beach, so I like people who can eat and aren't afraid to show it.\"<br>- Emily Ratajkowski", "\"Everything you see I owe to spaghetti.\"<br>- Sophia Loren", "\"If you can dream it, you can do it.\"<br>- Walt Disney", "\"Never give up, for that is just the place and time that the tide will turn.\"<br>- Harriet Beecher Stowe", "\"I know where I'm going and I know the truth, and I don't have to be what you want me to be. I'm free to be what I want.\"<br>- Muhammad Ali", "\"If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them.\"<br>- Bruce Lee",];
+var quotes = ["Blank", "\"Where there is a perfect <b>pancake</b> flip, there is life.\"<br>-  Mahoatmeal Ghandi", "\"I always get so excited cooking <b>chicken wings</b>.\"<br>-  Jourdan Dunn", "\"My mom would always make <b>quinoa with squash and kale</b>, hippie stuff like that.\"<br>-  Zoe Kravitz", "\"When you're eating a bowl of <b>pho</b>, you're eating everything you need.\"<br>-  Michelle Phan", "\"I'll have a <b>Chinese takeaway</b> now and again.\"<br>-  Caroline Flack", "\"Life is too short to miss out on the beautiful things like a <b>double cheeseburger</b>.\"<br>-  Channing Tatum", "\"I've got to get into shape. I've been eating nothing but <b>fish and chips</b>.\"<br>-  Emily Blunt", "\"The Tom Brady <b>sandwich</b> would be a prosciutto with a nice Buffalo mozzarella, on a crispy baguette with a little fresh basil.\"<br>-  Guy Fieri", "\"Let me be the first to tell you, drinking alcohol is the worst thing to do in cold weather. <b>Hot soup</b> is the best because the process of digesting food helps to warm you up.\"<br>-  Morgan Freeman", "\"My favorite food is <b>Ramen</b>.\"<br>-  Steve Aoki", "\"I love pizza; you can't really go wrong with <b>pizza</b>.\"<br> - Nick Jonas", "\"I love eating <b>sushi</b> and eating raw and clean - no pasta and bread. Low carbs is what works for me.\"<br> - Chrissy Teigen", "\"I grew up eating street <b>tacos and burritos</b> on the beach, so I like people who can eat and aren't afraid to show it.\"<br>- Emily Ratajkowski", "\"Everything you see I owe to <b>spaghetti</b>.\"<br>- Sophia Loren", "\"Cooking certain dishes, like <b>roast pork</b>, reminds me of my mother.\"<br>- Maya Angelou", "\"When I was 11, I made truffle <b>risotto</b> for my family for Christmas dinner.\"<br>- Gigi Hadid", "\"Doing the weekly shopping, I stock up on <b>stir-fry</b> kits.\"<br>- Carrie Underwood", "\"Don't just eat McDonald's, get something a bit better. Eat a <b>salad</b>. That's what fashion is. It's something that is a bit better.\"<br>- Vivienne Westwood",];
 
 //date
 function startDate() {
